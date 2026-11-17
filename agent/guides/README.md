@@ -11,3 +11,4 @@
 | Checking documentation changes | [Development and validation](development-and-validation.md) |
 | Preparing commits or pull requests | [Git and review](git-and-review.md) |
 | Coordinating a complex task across agents | [Subagent workflow](subagent-workflow.md) |
+| Handing work to another session or computer | [Handoff](handoff.md) |
