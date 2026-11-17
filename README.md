@@ -11,8 +11,10 @@
 
 1. **Infrastructure Setup and Testing** - @jangsoopark-codyssey
   - asdf
+
 2. **Documentation** - @Codex
   - asdf
-3. **Review and Commit** - @jangsoopark
+
+3. **Review and Commit** - @jangsoopark-codyssey
   - asdf
 
