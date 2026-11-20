@@ -52,21 +52,22 @@
 - [x] 외부 접속 결과 스크린샷 저장
 - [x] 실제 발생한 오류를 하나 이상 기록
   - 증상 → 가설 → 검증 → 조치 → 결과 → 재발 방지
+- [x] 아키텍처 다이어그램 초안 작성
 - [x] 실제 구성에 맞춰 아키텍처 다이어그램 수정 및 완성
 - [x] README에 접속 방식, URL 또는 IP, 증빙 링크 작성
+- [x] HTTPS 및 Docker 보너스 과제 수행 여부 결정
 - [ ] 리소스 정리 체크리스트 작성
-- [ ] HTTPS 및 Docker 보너스 과제 수행 여부 결정
-- [ ] 아키텍처 다이어그램 초안 작성
+
 
 ---
 
 ### 5. 실습 종료 및 리소스 정리
-- [ ] 증빙 자료 확보 여부 확인
-- [ ] EC2 인스턴스 종료
-- [ ] EBS 볼륨 및 Elastic IP 정리
-- [ ] Internet Gateway 분리 및 삭제
-- [ ] VPC, Subnet, Route Table 삭제
-- [ ] NAT Gateway, Load Balancer, RDS 생성 여부 확인 및 정리
-- [ ] Billing 화면에서 잔여 리소스 및 과금 항목 확인
+- [x] 증빙 자료 확보 여부 확인
+- [x] EC2 인스턴스 종료
+- [x] EBS 볼륨 및 Elastic IP 정리
+- [x] Internet Gateway 분리 및 삭제
+- [x] VPC, Subnet, Route Table 삭제
+- [x] NAT Gateway, Load Balancer, RDS 생성 여부 확인 및 정리
+- [x] Billing 화면에서 잔여 리소스 및 과금 항목 확인
 
 ---
