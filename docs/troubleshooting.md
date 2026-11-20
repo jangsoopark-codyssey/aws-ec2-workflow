@@ -17,8 +17,8 @@ createNote @ note-repository.js:35
 (anonymous) @ main.js:1531'
 
 ```
-![alt text](../assets/images/06.https.png)
-
+![alt text](../assets/images/05.https.png)
+![alt text](../assets/images/06.certificates.png)
 #### 참고 자료
 
 1. [MDN Web Docs — Crypto: randomUUID() method](https://developer.mozilla.org/en-US/docs/Web/API/Crypto/randomUUID)
