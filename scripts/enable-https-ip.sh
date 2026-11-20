@@ -227,9 +227,10 @@ ${DOCKER_BIN} start ${CONTAINER_NAME} >/dev/null 2>&1 || true
 HOOK
 sudo chmod 0755 "${HOOK_DIR}/pre/10-stop-draft-web" "${HOOK_DIR}/post/90-start-draft-web"
 
-# Use one renewal timer. The pre/post hooks free port 80 for standalone
-# validation and restart Nginx so it loads any renewed certificate.
+# Use one renewal timer. Disable any timer before testing renewal so it
+# cannot start a second Certbot process at the same time.
 sudo systemctl disable --now snap.certbot.renew.timer >/dev/null 2>&1 || true
+sudo systemctl disable --now draft-certbot-renew.timer >/dev/null 2>&1 || true
 sudo tee /etc/systemd/system/draft-certbot-renew.service >/dev/null <<'UNIT'
 [Unit]
 Description=Renew the Draft IP TLS certificate
@@ -243,16 +244,15 @@ sudo tee /etc/systemd/system/draft-certbot-renew.timer >/dev/null <<'UNIT'
 Description=Check the Draft IP TLS certificate for renewal twice daily
 
 [Timer]
-OnBootSec=10min
+OnActiveSec=12h
 OnUnitActiveSec=12h
-Persistent=true
 
 [Install]
 WantedBy=timers.target
 UNIT
 sudo systemctl daemon-reload
-sudo systemctl enable --now draft-certbot-renew.timer
 sudo "${CERTBOT_BIN}" renew --dry-run --cert-name "${EC2_PUBLIC_IP}"
+sudo systemctl enable --now draft-certbot-renew.timer
 
 if [[ "${BACKUP_CREATED}" == "true" ]]; then
   sudo docker rm -f "${BACKUP_NAME}" >/dev/null
