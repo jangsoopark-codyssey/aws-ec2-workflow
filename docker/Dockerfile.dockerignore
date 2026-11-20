@@ -1,0 +1,9 @@
+**
+!Draft/
+!Draft/index.html
+!Draft/css/
+!Draft/css/**
+!Draft/js/
+!Draft/js/**
+!docker/
+!docker/nginx.conf

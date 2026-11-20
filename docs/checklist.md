@@ -34,20 +34,19 @@
 ---
 
 ### 3. EC2 및 웹 서버 배포
-- [ ] Public Subnet에 EC2 인스턴스 생성
+- [x] Public Subnet에 EC2 인스턴스 생성
   - 프리티어 대상 micro급 인스턴스 선택
   - Ubuntu LTS 또는 Amazon Linux 선택
   - EBS 8–10 GiB로 설정
-- [ ] 인스턴스에 SSH 접속
-- [ ] Nginx 등 웹 서버 설치 및 실행
-- [ ] 인스턴스 내부에서 curl http://localhost 실행
+- [x] 인스턴스에 SSH 접속
+- [x] Nginx 등 웹 서버 설치 및 실행
+- [x] 인스턴스 내부에서 curl http://localhost 실행
   - HTTP 200 응답 확인
-- [ ] 인스턴스의 아웃바운드 인터넷 통신 확인
 
 ---
 
 ### 4. 외부 접속 검증 및 문서 작성
-- [ ] 외부 접속 방식 선택
+- [x] 외부 접속 방식 선택
   - 브라우저에서 http://<public-ip> 접속
   - 또는 GET http://<public-ip>/health 요청 후 HTTP 200 확인
 - [ ] 외부 접속 결과 스크린샷 저장
