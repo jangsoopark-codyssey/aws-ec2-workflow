@@ -18,8 +18,7 @@ This repository documents AWS EC2 and networking concepts and records the B3-1 A
 │   └── terminology/
 │       ├── aws/                   # AWS service and resource topics
 │       └── networking/            # General networking topics
-├── scripts/                       # Docker and HTTPS setup/run scripts
-└── tree.txt                       # Recorded repository tree
+└── scripts/                       # Docker and HTTPS setup/run scripts
 ```
 
 ## Root files and directories
@@ -30,7 +29,6 @@ This repository documents AWS EC2 and networking concepts and records the B3-1 A
 - `docker/` contains the NGINX container build and server configuration, including `Dockerfile`, `Dockerfile.dockerignore`, and `nginx.conf`.
 - `scripts/` contains scripts for installing Docker, running the container, installing Certbot, and enabling HTTPS with an IP certificate.
 - `assets/images/` contains evidence captured during the AWS mission. Keep filenames numbered and descriptive; do not include credentials, private keys, or other secrets.
-- `tree.txt` is a snapshot of the repository layout. Update it when a structural change makes the snapshot stale.
 
 ## Agent guidance and handoffs
 
@@ -72,5 +70,5 @@ The supplied tree names the cleanup file `docs/cleanup-ckecklist.md` (misspelled
 2. Place the file in the established directory for its purpose.
 3. Search for existing coverage before creating another terminology or mission document.
 4. Update `docs/terminology.md`, `README.md`, or other indexes when adding a document that should be discoverable.
-5. Update `tree.txt` and this guide when a structural change makes either description inaccurate.
+5. Update this guide and relevant indexes when a structural change makes their descriptions inaccurate.
 6. Keep generated evidence and configuration free of secrets.
