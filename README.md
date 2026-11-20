@@ -57,7 +57,7 @@ $
 ### Test - Public Network
 ```bash
 
-$ curl -i http://54.180.29.87/health
+$ curl -i http://{PUBLIC_IP}/health
 
 HTTP/1.1 200 OK
 Server: nginx/1.31.9
